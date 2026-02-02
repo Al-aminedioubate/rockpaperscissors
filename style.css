@@ -1,0 +1,33 @@
+body{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    background: rgb(245, 244, 243);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 80px;
+    height: 80px;
+}
+
+button{
+    color: blueviolet;
+    border-color: rgb(245, 244, 243);
+    border-radius: 6px;
+    outline: none;
+}
+
+p{
+    font-size: 40px;
+}
+#playerScore{
+    color: rgb(247, 3, 154);
+}
+#computerScore{
+    color: rgb(13, 195, 232);
+}
