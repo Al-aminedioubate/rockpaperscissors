@@ -48,3 +48,9 @@ h1{
     font-weight: bold;
     font-size: 40px;
 }
+
+h2{
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
