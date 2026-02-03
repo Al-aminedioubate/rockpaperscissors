@@ -5,6 +5,7 @@ body{
     justify-content: center;
     background: rgb(245, 244, 243);
 }
+
 /*Section container style*/
 .container{
     display: flex;
@@ -12,11 +13,13 @@ body{
     align-items: center;
 }
 
+/*Section image style*/
 img{
     width: 80px;
     height: 80px;
 }
 
+/*Section bouton style*/
 button{
     color: blueviolet;
     border-color: rgb(245, 244, 243);
