@@ -1,9 +1,11 @@
+/*Section body style*/
 body{
     margin: 50px;
     display: flex;
     justify-content: center;
     background: rgb(245, 244, 243);
 }
+/*Section container style*/
 .container{
     display: flex;
     flex-direction: column;
