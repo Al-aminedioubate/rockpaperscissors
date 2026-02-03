@@ -32,9 +32,11 @@ p{
     font-size: 40px;
 }
 
+/*Section span style pour les scores*/
 #playerScore{
     color: rgb(247, 3, 154);
 }
+
 #computerScore{
     color: rgb(13, 195, 232);
 }
