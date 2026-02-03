@@ -29,7 +29,9 @@ button{
 
 /*Section p style*/
 p{
-    font-size: 40px;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 /*Section span style pour les scores*/
