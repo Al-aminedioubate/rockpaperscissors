@@ -37,10 +37,16 @@ p{
 /*Section span style pour les scores*/
 #playerScore{
     color: rgb(247, 3, 154);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 #computerScore{
     color: rgb(13, 195, 232);
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: bold;
 }
 
 h1{
