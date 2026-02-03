@@ -27,9 +27,11 @@ button{
     outline: none;
 }
 
+/*Section p style*/
 p{
     font-size: 40px;
 }
+
 #playerScore{
     color: rgb(247, 3, 154);
 }
