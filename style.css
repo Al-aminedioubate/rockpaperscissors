@@ -42,3 +42,9 @@ p{
 #computerScore{
     color: rgb(13, 195, 232);
 }
+
+h1{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 40px;
+}
