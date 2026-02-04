@@ -63,6 +63,7 @@ h2{
     font-weight: bold;
 }
 
+/*Section btn style*/
 button:hover{
     cursor: pointer;
     gap: 15px;
