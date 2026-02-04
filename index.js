@@ -5,6 +5,10 @@ let scissor = document.getElementById("scissorsBtn");
 
 let randomValue;
 
+function computerValue() {
+	//randomValue = Math.random()
+}
+
 function rocks() {
 	console.log("rock fonctionne");
 }
