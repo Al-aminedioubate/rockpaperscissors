@@ -62,3 +62,9 @@ h2{
     font-size: 20px;
     font-weight: bold;
 }
+
+button:hover{
+    cursor: pointer;
+    gap: 15px;
+    transform: scale(1.1);
+}
