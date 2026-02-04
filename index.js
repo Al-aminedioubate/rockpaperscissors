@@ -1,7 +1,7 @@
 //Declaration et initialisation de nos variales
 let rock = document.getElementById("rockBtn");
 let paper = document.getElementById("paperBtn");
-let scissors = document.getElementById("scissorsBtn");
+let scissor = document.getElementById("scissorsBtn");
 
 let randomValue;
 
@@ -16,3 +16,8 @@ function papers() {
 function scissors() {
 	console.log("scissors fonctionne");
 }
+
+//nos evenement declencheur sur les boutons
+rock.addEventListener("click", rocks);
+paper.addEventListener("click", papers);
+scissor.addEventListener("Click", scissors);
