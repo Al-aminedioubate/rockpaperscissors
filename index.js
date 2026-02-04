@@ -5,3 +5,14 @@ let scissors = document.getElementById("scissorsBtn");
 
 let randomValue;
 
+function rocks() {
+	console.log("rock fonctionne");
+}
+
+function papers() {
+	console.log("papers fonctionne");
+}
+
+function scissors() {
+	console.log("scissors fonctionne");
+}
