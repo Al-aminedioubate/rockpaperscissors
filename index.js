@@ -5,6 +5,8 @@ let scissor = document.getElementById("scissorsBtn");
 
 let randomValue;
 
+let games = ["rock", "paper", "scissors"];
+
 function computerValue() {
 	//randomValue = Math.random()
 }
