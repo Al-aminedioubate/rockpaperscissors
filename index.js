@@ -7,12 +7,28 @@ let randomValue;
 
 let games = ["rock", "paper", "scissors"];
 
-function computerValue() {
-	//randomValue = Math.random()
+function computerValue(games) {
+	const randomValue = Math.floor(Math.random() * games.length);
+	return games[randomValue];
 }
+
+let result = computerValue(games);
+console.log("is the random " + result);
 
 function rocks() {
 	console.log("rock fonctionne");
+
+	if (result == "rock") {
+		console.log("the geme is tied");
+	}
+
+	if (result == "paper") {
+		console.log("Computer won ");
+	}
+
+	if (result == "scissors") {
+		console.log("you won ");
+	}
 }
 
 function papers() {
