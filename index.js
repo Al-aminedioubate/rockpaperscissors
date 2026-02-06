@@ -49,6 +49,14 @@ function scissors() {
 	if (result == "scissors") {
 		console.log("the game is tied");
 	}
+
+	if (result == "paper") {
+		console.log("you won");
+	}
+
+	if (result == "rock") {
+		console.log("computer won");
+	}
 }
 
 //nos evenement declencheur sur les boutons
