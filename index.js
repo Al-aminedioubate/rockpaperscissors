@@ -46,6 +46,9 @@ function papers() {
 
 function scissors() {
 	console.log("scissors fonctionne");
+	if (result == "scissors") {
+		console.log("the game is tied");
+	}
 }
 
 //nos evenement declencheur sur les boutons
