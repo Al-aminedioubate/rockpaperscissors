@@ -3,8 +3,10 @@ let rock = document.getElementById("rockBtn");
 let paper = document.getElementById("paperBtn");
 let scissor = document.getElementById("scissorsBtn");
 
+//tableau contenant les jeux
 let games = ["rock", "paper", "scissors"];
 
+//Fonction permettant de generer une valeur au hasard a partir du tableau du jeu
 function computerValue(games) {
 	const randomValue = Math.floor(Math.random() * games.length);
 	return games[randomValue];
