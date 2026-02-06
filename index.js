@@ -31,6 +31,17 @@ function rocks() {
 
 function papers() {
 	console.log("papers fonctionne");
+	if (result == "paper") {
+		console.log("the game is tied");
+	}
+
+	if (result == "rock") {
+		console.log("you won");
+	}
+
+	if (result == "scissors") {
+		console.log("Computer won");
+	}
 }
 
 function scissors() {
