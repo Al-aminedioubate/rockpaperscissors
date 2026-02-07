@@ -16,8 +16,6 @@ let result = computerValue(games);
 console.log("is the random " + result);
 
 function rocks() {
-	console.log("rock fonctionne");
-
 	if (result == "rock") {
 		console.log("the geme is tied");
 	}
@@ -32,7 +30,6 @@ function rocks() {
 }
 
 function papers() {
-	console.log("papers fonctionne");
 	if (result == "paper") {
 		console.log("the game is tied");
 	}
@@ -47,7 +44,6 @@ function papers() {
 }
 
 function scissors() {
-	console.log("scissors fonctionne");
 	if (result == "scissors") {
 		console.log("the game is tied");
 	}
