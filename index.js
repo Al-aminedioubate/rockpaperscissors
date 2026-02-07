@@ -64,4 +64,4 @@ function scissors() {
 //nos evenement declencheur sur les boutons
 rock.addEventListener("click", rocks);
 paper.addEventListener("click", papers);
-scissor.addEventListener("Click", scissors);
+scissor.addEventListener("click", scissors);
