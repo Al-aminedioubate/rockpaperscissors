@@ -15,6 +15,7 @@ function computerValue(games) {
 let result = computerValue(games);
 console.log("is the random " + result);
 
+//La fonction de traitement rock
 function rocks() {
 	if (result == "rock") {
 		console.log("the geme is tied");
@@ -29,6 +30,7 @@ function rocks() {
 	}
 }
 
+//La fonction de traitement paper
 function papers() {
 	if (result == "paper") {
 		console.log("the game is tied");
@@ -43,6 +45,7 @@ function papers() {
 	}
 }
 
+//La fonction de traitement scissors
 function scissors() {
 	if (result == "scissors") {
 		console.log("the game is tied");
