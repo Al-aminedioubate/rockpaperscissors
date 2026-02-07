@@ -18,10 +18,11 @@ let result = computerValue(games);
 console.log("is the random " + result);
 
 //La fonction de traitement rock
-function rocks() {
-	let showResult = document.createElement("p");
-	p.appendChild(showResult);
 
+let showResult = document.createElement("p");
+p.appendChild(showResult);
+
+function rocks() {
 	if (result == "rock") {
 		console.log("the geme is tied");
 
