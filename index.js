@@ -3,6 +3,8 @@ let rock = document.getElementById("rockBtn");
 let paper = document.getElementById("paperBtn");
 let scissor = document.getElementById("scissorsBtn");
 
+let p = document.getElementById("affichage");
+
 //tableau contenant les jeux
 let games = ["rock", "paper", "scissors"];
 
@@ -17,16 +19,25 @@ console.log("is the random " + result);
 
 //La fonction de traitement rock
 function rocks() {
+	let showResult = document.createElement("p");
+	p.appendChild(showResult);
+
 	if (result == "rock") {
 		console.log("the geme is tied");
+
+		showResult.textContent = "It's a tied!";
 	}
 
 	if (result == "paper") {
 		console.log("Computer won ");
+
+		showResult.textContent = "You lose! paper beats rock";
 	}
 
 	if (result == "scissors") {
 		console.log("you won ");
+
+		showResult.textContent = "You win! rock beats scissors";
 	}
 }
 
