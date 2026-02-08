@@ -17,6 +17,7 @@ function computerValue(games) {
 let result = computerValue(games);
 console.log("is the random " + result);
 
+//La creation d'un element p pour afficher les resultat du chaque victoire sur la page
 let showResult = document.createElement("p");
 p.appendChild(showResult);
 
