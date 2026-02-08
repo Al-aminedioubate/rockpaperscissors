@@ -32,6 +32,7 @@ p{
     font-size: 30px;
     font-family: monospace;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 /*Section span style pour les scores*/
@@ -59,7 +60,7 @@ h1{
 /*Section h2 style pour les scores*/
 h2{
     font-family: monospace;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
 }
 

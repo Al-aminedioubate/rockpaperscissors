@@ -5,6 +5,8 @@ let scissor = document.getElementById("scissorsBtn");
 
 let p = document.getElementById("affichage");
 
+let winPlayer, winComputer;
+
 //tableau contenant les jeux
 let games = ["rock", "paper", "scissors"];
 
@@ -54,15 +56,15 @@ function papers() {
 //La fonction de traitement scissors
 function scissors() {
 	if (result == "scissors") {
-		console.log("the game is tied");
+		showResult.textContent = "It's a tied!";
 	}
 
 	if (result == "paper") {
-		console.log("you won");
+		showResult.textContent = "You win! scissors beats paper";
 	}
 
 	if (result == "rock") {
-		console.log("computer won");
+		showResult.textContent = "You lose! rock beats scissors";
 	}
 }
 
