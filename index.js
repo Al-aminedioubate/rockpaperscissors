@@ -45,7 +45,7 @@ function rocks() {
 //La fonction de traitement paper
 function papers() {
 	if (result == "paper") {
-		console.log("the game is tied");
+		showResult.textContent = "It's a tied!";
 	}
 
 	if (result == "rock") {
