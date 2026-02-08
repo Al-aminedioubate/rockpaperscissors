@@ -49,7 +49,7 @@ function papers() {
 	}
 
 	if (result == "rock") {
-		console.log("you won");
+		showResult.textContent = "You win! paper beats rock";
 	}
 
 	if (result == "scissors") {
