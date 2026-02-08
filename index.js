@@ -17,11 +17,10 @@ function computerValue(games) {
 let result = computerValue(games);
 console.log("is the random " + result);
 
-//La fonction de traitement rock
-
 let showResult = document.createElement("p");
 p.appendChild(showResult);
 
+//La fonction de traitement rock
 function rocks() {
 	if (result == "rock") {
 		showResult.textContent = "It's a tied!";
