@@ -67,11 +67,6 @@ function scissors() {
 	}
 }
 
-//nos evenement declencheur sur les boutons
-/*rock.addEventListener("click", rocks);
-paper.addEventListener("click", papers);
-scissor.addEventListener("click", scissors);*/
-
 //Creons une boucle permettant de parcourir tout nos boutons pour executer les evenements.
 buttons.forEach((button) => {
 	button.addEventListener("click", () => {
