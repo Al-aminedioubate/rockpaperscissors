@@ -24,20 +24,14 @@ p.appendChild(showResult);
 
 function rocks() {
 	if (result == "rock") {
-		console.log("the geme is tied");
-
 		showResult.textContent = "It's a tied!";
 	}
 
 	if (result == "paper") {
-		console.log("Computer won ");
-
 		showResult.textContent = "You lose! paper beats rock";
 	}
 
 	if (result == "scissors") {
-		console.log("you won ");
-
 		showResult.textContent = "You win! rock beats scissors";
 	}
 }
@@ -53,7 +47,7 @@ function papers() {
 	}
 
 	if (result == "scissors") {
-		console.log("Computer won");
+		showResult.textContent = "You lose! scissors beats paper";
 	}
 }
 
