@@ -37,21 +37,6 @@ function playerRound(playerChoice, computerChoice) {
 	}
 }
 
-//La fonction de traitement paper
-function papers() {
-	if (result == "paper") {
-		showResult.textContent = "It's a tied!";
-	}
-
-	if (result == "rock") {
-		showResult.textContent = "You win! paper beats rock";
-	}
-
-	if (result == "scissors") {
-		showResult.textContent = "You lose! scissors beats paper";
-	}
-}
-
 //Creons une boucle permettant de parcourir tout nos boutons pour executer les evenements.
 buttons.forEach((button) => {
 	button.addEventListener("click", () => {
