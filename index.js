@@ -52,21 +52,6 @@ function papers() {
 	}
 }
 
-//La fonction de traitement scissors
-function scissors() {
-	if (result == "scissors") {
-		showResult.textContent = "It's a tied!";
-	}
-
-	if (result == "paper") {
-		showResult.textContent = "You win! scissors beats paper";
-	}
-
-	if (result == "rock") {
-		showResult.textContent = "You lose! rock beats scissors";
-	}
-}
-
 //Creons une boucle permettant de parcourir tout nos boutons pour executer les evenements.
 buttons.forEach((button) => {
 	button.addEventListener("click", () => {
