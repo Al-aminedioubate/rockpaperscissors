@@ -1,40 +1,39 @@
 //Declaration et initialisation de nos variales
-let rock = document.getElementById("rockBtn");
-let paper = document.getElementById("paperBtn");
-let scissor = document.getElementById("scissorsBtn");
+let playerScoreResult = document.getElementById("playerScore");
+let computerScoreResult = document.getElementById("computerScore");
 
-let p = document.getElementById("affichage");
+let buttons = document.querySelectorAll("button");
 
-let winPlayer, winComputer;
+let showResult = document.getElementById("affichage");
 
-//tableau contenant les jeux
-let games = ["rock", "paper", "scissors"];
+let scorePlayer = 0;
+let scoreComputer = 0;
 
 //Fonction permettant de generer une valeur au hasard a partir du tableau du jeu
-function computerValue(games) {
-	const randomValue = Math.floor(Math.random() * games.length);
-	return games[randomValue];
+function computerPlay() {
+	let games = ["rock", "paper", "scissors"];
+	const randomchoice = Math.floor(Math.random() * games.length);
+	return games[randomchoice];
 }
 
-let result = computerValue(games);
-console.log("is the random " + result);
-
-//La creation d'un element p pour afficher les resultat du chaque victoire sur la page
-let showResult = document.createElement("p");
-p.appendChild(showResult);
-
 //La fonction de traitement rock
-function rocks() {
-	if (result == "rock") {
-		showResult.textContent = "It's a tied!";
-	}
+function playerRound(playerChoice, computerChoice) {
+	if (playerChoice == computerChoice) {
+		return "It's a tie!";
+	} else if (
+		(playerChoice == "rock" && computerChoice == "scissors") ||
+		(playerChoice == "paper" && computerChoice == "rock") ||
+		(playerChoice == "scissors" && computerChoice == "paper")
+	) {
+		scorePlayer++;
+		playerScoreResult.textContent = scorePlayer;
 
-	if (result == "paper") {
-		showResult.textContent = "You lose! paper beats rock";
-	}
+		return "You win! " + playerChoice + " beats " + computerChoice;
+	} else {
+		scoreComputer++;
+		computerScoreResult.textContent = scoreComputer;
 
-	if (result == "scissors") {
-		showResult.textContent = "You win! rock beats scissors";
+		return `You lose! ${computerChoice} beats ${playerChoice}`;
 	}
 }
 
@@ -69,6 +68,14 @@ function scissors() {
 }
 
 //nos evenement declencheur sur les boutons
-rock.addEventListener("click", rocks);
+/*rock.addEventListener("click", rocks);
 paper.addEventListener("click", papers);
-scissor.addEventListener("click", scissors);
+scissor.addEventListener("click", scissors);*/
+
+//Creons une boucle permettant de parcourir tout nos boutons pour executer les evenements.
+buttons.forEach((button) => {
+	button.addEventListener("click", () => {
+		const result = playerRound(button.id, computerPlay());
+		showResult.textContent = result;
+	});
+});
