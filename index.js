@@ -18,6 +18,9 @@ function computerPlay() {
 
 //La fonction de traitement rock
 function playerRound(playerChoice, computerChoice) {
+	//playerChoice.classList.add("choices");
+	//computerChoice.classList.add("choices");
+
 	if (playerChoice == computerChoice) {
 		return "It's a tie!";
 	} else if (
